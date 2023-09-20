@@ -3,12 +3,12 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<a href="/product-create">Вернутся к созданию</a>
+<a class="form__create_card" href="/product-create">Создать карточку товара</a>
 <h1 class="page__title">Список товаров</h1>
 <div class="card__field">
   {{#with data.products}}
   {{#if isEmpty}}
-  <mark>Пустой</mark>
+  <mark>Список пустой <a href="/product-create">Вернутся к созданию</a></mark>
   {{else}}
   {{#each list}}<div class="card">
     <h2 class="card__title">{{name}}</h2>

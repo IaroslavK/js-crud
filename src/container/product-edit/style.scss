@@ -74,6 +74,8 @@
     }
 
     &__button_danger {
+        display: flex;
+        justify-content: center;
         border: 1px solid s.color('light');
         padding: s.space(2);
         border-radius: 5px;

@@ -1,4 +1,14 @@
 @use '../../lib/service.scss' as s;
+.form__create_card {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid s.color('light');
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    margin-bottom: 10px;
+}
 .page__title {
     font-size: 24px;
     font-weight: 800;
