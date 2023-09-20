@@ -1,0 +1,95 @@
+@use '../../lib/service.scss' as s;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: s.space(4);
+    gap: s.space(8);
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: s.space(1);
+        color: s.color('primary');
+    }
+    
+    &__info {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__content {
+        display: grid;
+        gap: s.space(4);
+        border: 1px solid s.color('light');
+        border-radius: 20px;
+        padding: s.space(4);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.273);
+    }
+
+    &__product {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: s.space(4);
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        gap: s.space(2);
+    }
+
+    &__label {
+        font-size: 14px;
+    }
+    &__input_s {
+        border: 1px solid s.color('light');
+        padding: s.space(1);
+        border-radius: 5px;
+    }
+
+    &__input {
+        border: 1px solid s.color('light');
+        padding: s.space(2);
+        border-radius: 5px;
+    }
+
+    &__input_description{
+        font-size: 12px;
+        color: rgba(128, 128, 128, 0.447);
+    }
+
+    &__buttons{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    &__button_primary {
+        border: 1px solid s.color('light');
+        padding: s.space(2);
+        border-radius: 5px;
+        color: white;
+        background-color: s.color('primary');
+        text-decoration: none;
+    }
+
+    &__button_danger {
+        border: 1px solid s.color('light');
+        padding: s.space(2);
+        border-radius: 5px;
+        color: white;
+        background-color: s.color('danger');
+        text-decoration: none;
+    }
+
+    &__href {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(10);
+}
