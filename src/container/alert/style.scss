@@ -1,12 +1,6 @@
 @use '../../lib/service.scss' as s;
 
-.form {
-    display: flex;
-    flex-direction: column;
-    padding: s.space(4);
-    gap: s.space(8);
-
-    &__content {
+.card {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -15,9 +9,9 @@
         border-radius: 20px;
         padding: s.space(4);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.273);
-    }
+    
 
-    &__description {
+    &__header {
         display: flex;
         flex-direction: column;
         gap: s.space(2);
@@ -28,7 +22,7 @@
         font-weight: 600;
         padding-bottom: s.space(1);
     }
-    &__info {
+    &__subtitle {
         font-size: 16px;
     }
 

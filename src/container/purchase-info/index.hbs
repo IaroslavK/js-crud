@@ -1,0 +1,84 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<form method="POST" action="/purchase-edit?id={{id}}">
+  <main class=" info">
+
+    <h1 class="title">Інформація про замовлення</h1>
+
+    {{#with data}}
+    {{#with info}}
+    <div class="info__amount">
+      <p class="info__title">ID:</p>
+      <p class="info__subtitle">{{id}}</p>
+    </div>
+
+    {{> divider}}
+    <div class="info__contact">
+      <div class="info__amount">
+        <p class="info__title">Ім'я:</p>
+        <p class="info__subtitle">{{firstname}}</p>
+      </div>
+      <div class="info__amount">
+        <p class="info__title">Прізвище:</p>
+        <p class="info__subtitle">{{lastname}}</p>
+      </div>
+      <div class="info__amount">
+        <p class="info__title">Телефон:</p>
+        <p class="info__subtitle">{{phone}}</p>
+      </div>
+      <div class="info__amount">
+        <p class="info__title">Електронна пошта:</p>
+        <p class="info__subtitle">{{email}}</p>
+      </div>
+    </div>
+    {{>divider}}
+
+    <div class="info__amount">
+      {{#with product}}
+      <p class="info__title">Назва товару:</p>
+      <p class="info__subtitle">{{title}}</p>
+      {{/with}}
+    </div>
+    <div class="info__amount">
+      <p class="info__title">Коментар:</p>
+      <p class="info__subtitle">{{comment}}</p>
+    </div>
+
+    {{/with}}
+    {{>divider}}
+
+    <div class="info__price">
+      <div class="info__amount">
+        <p class="info__title">Вартість товарів:</p>
+        <p class="info__subtitle">{{productPrice}}₴</p>
+      </div>
+      <div class="info__amount">
+        <p class="info__title">Вартість доставки:</p>
+        <p class="info__subtitle">{{deliveryPrice}}₴</p>
+      </div>
+      <div class="info__amount">
+        <p class="info__title">Сума до сплати:</p>
+        <p class="info__subtitle">{{totalPrice}}₴</p>
+      </div>
+      <div class="info__amount">
+        <p class="info__title">Нараховані бонуси:</p>
+        <p class="info__subtitle">{{bonus}}₴</p>
+      </div>
+    </div>
+
+    {{>divider}}
+
+    <a class="info__button" href="/purchase-edit?id={{id}}">Змінити дані</a>
+    {{/with}}
+  </main>
+</form>
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+  Адже наш layout/default.hbs має вже структуру HTML
+  }}
