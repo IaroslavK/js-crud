@@ -14,7 +14,7 @@
 
 .product-card {
   border-radius: 10px;
-  border: 1px solid;
+  border: 1px solid gray;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -40,6 +40,7 @@
   padding: 5px 10px;
   border-radius: 30px;
   font-size: 14px;
+  color: #000;
   border: 1px solid transparent;
 }
 
@@ -148,6 +149,7 @@
   padding: 5px 10px;
   border-radius: 30px;
   font-size: 14px;
+  color: #000;
   border: 1px solid transparent;
 }
 
