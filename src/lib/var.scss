@@ -2,6 +2,8 @@ $colorMap: (
     light: #ddd,
     primary: rgb(6, 128, 250),
     danger: red,
+    dark: #000,
+    border: gray,
 );
 
 @function color($key) {

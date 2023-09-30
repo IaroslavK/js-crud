@@ -1,0 +1,21 @@
+@use '../../lib/service.scss' as s;
+@use '../../lib/spotify.scss' as spotify;
+
+.header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.title--library {
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.instruments {
+    display: flex;
+    flex-direction: row;
+    gap: s.space(8);
+
+}
